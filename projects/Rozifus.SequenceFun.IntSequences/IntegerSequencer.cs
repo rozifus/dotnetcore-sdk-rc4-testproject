@@ -3,7 +3,7 @@ using Rozifus.SequenceFun.Interfaces;
 
 namespace Rozifus.SequenceFun.IntSequences
 {
-    public class IntegerSequencer : ISequencer<int> 
+    public class IntegerSequencer : ISequencer
     {
         public static int Zero = 0;
         int _value;
@@ -25,12 +25,12 @@ namespace Rozifus.SequenceFun.IntSequences
             }
         }
 
-        public ISequencer<int> Next() {
-            return new IntegerSequencer(Value + 1);
+        public void Next() {
+            _value += 1;
         }
 
-        public ISequencer<int> Prev() {
-            return new IntegerSequencer(Value - 1);
+        public void Prev() {
+            _value -= 1;
         }
 
         public override string ToString() {

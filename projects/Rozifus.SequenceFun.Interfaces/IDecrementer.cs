@@ -2,7 +2,8 @@ using System;
 
 namespace Rozifus.SequenceFun.Interfaces
 {
-    public interface ISequencer : IIncrementer, IDecrementer
+    public interface IDecrementer : IElement
     {
+        void Prev();
     }
 }
