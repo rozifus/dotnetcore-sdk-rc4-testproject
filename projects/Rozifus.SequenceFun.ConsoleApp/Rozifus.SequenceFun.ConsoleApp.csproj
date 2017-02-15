@@ -6,7 +6,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="../Rozifus.SequenceFun.Interfaces/Rozifus.SequenceFun.Interfaces.csproj" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="../Rozifus.SequenceFun.IntSequences/Rozifus.SequenceFun.IntSequences.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../Rozifus.SequenceFun.StringSequences/Rozifus.SequenceFun.StringSequences.csproj" />
+  </ItemGroup>
+
+
 
 </Project>
